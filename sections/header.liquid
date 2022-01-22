@@ -35,3 +35,20 @@
       </div>
     </div>
   </section>
+
+  <!-- Main Menu -->
+  {% include 'menu' %}
+
+{% schema %}
+{
+    "name":"Main Menu",
+    "settings":[
+    {
+        "type":"link_list",
+        "id":"mainmenu",
+        "label":"Main_Menu",
+        "default":"main-menu"
+    }
+    ]
+}
+{% endschema %}
