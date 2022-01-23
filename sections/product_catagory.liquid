@@ -1,0 +1,119 @@
+
+  <section class="product-category">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title text-center">
+            <h2>{{section.settings.title}}</h2>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="category-box">
+            <a href="{{section.settings.catagory_top_left_url}}">
+              <img src="{{section.settings.catagory_top_left_banner | img_url: '1920x'}}" alt="">
+              <div class="content">
+                <h3>{{section.settings.catagory_top_left_title}}</h3>
+                <p>{{section.settings.catagory_top_left_content}}</p>
+              </div>
+            </a>  
+          </div>
+          <div class="category-box">
+            <a href="{{section.settings.catagory_bottom_left_url}}">
+              <img src="{{section.settings.catagory_bottom_left_banner | img_url: '1920x'}}" alt="">
+              <div class="content">
+                <h3>{{section.settings.catagory_bottom_left_title}}</h3>
+                <p>{{section.settings.catagory_bottom_left_content}}</p>
+              </div>
+            </a>  
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="category-box category-box-2">
+            <a href="{{section.settings.catagory_right_url}}">
+              <img src="{{section.settings.catagory_right_banner | img_url: '1920x'}}" alt="">
+              <div class="content">
+                <h3>{{section.settings.catagory_right_title}}</h3>
+                <p>{{section.settings.catagory_right_content}}</p>
+              </div>
+            </a>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% schema %}
+  {
+      "name":"Product Catagory Banners",
+      "settings":[
+        {
+            "type":"text",
+            "id":"title",
+            "label":"Section Heading",
+            "default":"Product Catagory"
+        },
+        {
+            "type":"text",
+            "id":"catagory_top_left_title",
+            "label":"Catagory Top Left Title"
+        },
+        {
+            "type":"text",
+            "id":"catagory_top_left_content",
+            "label":"Catagory Top Left Content"
+        },
+        {
+            "type":"url",
+            "id":"catagory_top_left_url",
+            "label":"Catagory Top Left URL"
+        },
+        {
+            "type":"image_picker",
+            "id":"catagory_top_left_banner",
+            "label":"Catagory Top Left Banner"
+        },
+        {
+            "type":"text",
+            "id":"catagory_bottom_left_title",
+            "label":"Catagory Bottom Left Title"
+        },
+        {
+            "type":"text",
+            "id":"catagory_bottom_left_content",
+            "label":"Catagory Bottom Left Content"
+        },
+        {
+            "type":"url",
+            "id":"catagory_bottom_left_url",
+            "label":"Catagory Bottom Left URL"
+        },
+        {
+            "type":"image_picker",
+            "id":"catagory_bottom_left_banner",
+            "label":"Catagory Bottom Left Banner"
+        },
+        {
+            "type":"text",
+            "id":"catagory_right_title",
+            "label":"Catagory Right Left Title"
+        },
+        {
+            "type":"text",
+            "id":"catagory_right_content",
+            "label":"Catagory Right Left Content"
+        },
+        {
+            "type":"url",
+            "id":"catagory_right_url",
+            "label":"Catagory Right Left URL"
+        },
+        {
+            "type":"image_picker",
+            "id":"catagory_right_banner",
+            "label":"Catagory Right Left Banner"
+        }
+      ]
+  }
+  {% endschema %}
